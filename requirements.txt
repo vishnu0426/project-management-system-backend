@@ -38,6 +38,7 @@ openai>=1.58.1
 # Utilities
 python-slugify>=5.0.2
 redis>=3.4.1,<4.0.0
+qrcode[pil]>=7.4
 
 # Production Dependencies
 structlog>=23.1.0
