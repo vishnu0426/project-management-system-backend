@@ -1,0 +1,61 @@
+# Core Framework
+fastapi>=0.68.0
+uvicorn[standard]>=0.15.0
+python-multipart>=0.0.5
+
+# Database
+asyncpg>=0.24.0
+sqlalchemy[asyncio]>=1.4.23
+alembic>=1.7.4
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+pyotp>=2.6.0
+
+# Environment & Configuration
+python-dotenv>=0.19.0
+pydantic>=1.9.0
+
+# File Upload & Storage
+aiofiles>=0.7.0
+pillow>=8.3.2
+# python-magic>=0.4.24  # Removed - using built-in mimetypes module instead
+
+# Email
+aiosmtplib>=1.1.6
+jinja2>=3.0.2
+
+# Real-time Features
+python-socketio>=5.3.0
+
+# HTTP Client
+httpx>=0.24.1
+
+# AI Integration
+openai>=1.58.1
+
+# Utilities
+python-slugify>=5.0.2
+redis>=3.4.1,<4.0.0
+
+# Production Dependencies
+structlog>=23.1.0
+python-json-logger>=2.0.7
+# uvloop>=0.17.0  # Not supported on Windows
+gunicorn>=21.2.0
+
+# Monitoring and Observability
+prometheus-client>=0.17.0
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+
+# Development & Testing
+pytest==6.2.5
+pytest-asyncio==0.15.1
+black==21.9b0
+isort==5.9.3
+flake8==3.9.2
+
+# Rate Limiting
+slowapi==0.1.4
