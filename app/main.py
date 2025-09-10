@@ -58,8 +58,7 @@ if settings.environment == "production":
 # Add CORS middleware with proper dev/prod configuration
 app.add_middleware(
     CORSMiddleware,
-    #allow_origins=settings.allowed_origins,  # From config: dev includes localhost:3002
-    allow_origins=["*"],
+    allow_origins=settings.allowed_origins,  # From config: dev includes localhost:3002
     allow_credentials=True,  # Allow credentials for authentication
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],  # or explicit: ["Content-Type", "Authorization"]
